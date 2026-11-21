@@ -1,0 +1,39 @@
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0f2fe;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  padding: 45px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h1 {
+  color: #0284c7;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.button {
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+}

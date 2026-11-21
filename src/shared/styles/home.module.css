@@ -1,0 +1,247 @@
+
+.page {
+  min-height: 100vh;
+  background: #edf5fc;
+  color: #172554;
+  font-family: Georgia, serif;
+}
+
+/* Navbar */
+.navbar {
+  min-height: 48px;
+  background: #191c70;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  color: white;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navLinks,
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navLinks a,
+.navActions a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signup {
+  background: white;
+  color: #191c70 !important;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 350px;
+}
+
+.heroImage {
+  background: linear-gradient(135deg, #102b49, #315b78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.heroContent {
+  padding: 35px 10%;
+  background: #edf5fc;
+}
+
+.heroContent h1 {
+  color: #20276e;
+  font-size: 32px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.exploreButton {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 22px;
+  background: #456879;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Features */
+.features {
+  margin: 0 5%;
+  padding: 25px;
+  background: #89b4b2;
+  text-align: center;
+}
+
+.features h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.featureList {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.featureCard {
+  width: 180px;
+  min-height: 110px;
+  padding: 15px;
+  background: white;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureCard h3 {
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+.featureCard span {
+  font-size: 35px;
+}
+
+/* Service steps */
+.process {
+  padding: 30px 5%;
+  text-align: center;
+}
+
+.process h2 {
+  color: #111827;
+  font-size: 27px;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.stepWrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.stepCard {
+  width: 145px;
+  min-height: 120px;
+  background: #d1e6df;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stepNumber {
+  background: white;
+  color: #111827;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.stepCard p {
+  font-size: 13px;
+}
+
+.startButton {
+  background: #7198a9;
+  color: white;
+  text-decoration: none;
+  padding: 7px 18px;
+  font-size: 12px;
+}
+
+.arrow {
+  color: #3977c5;
+  font-size: 30px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #d1e6df;
+}
+
+.dashboardIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #73758f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.dashboardIcon span {
+  font-size: 15px;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .navLinks {
+    gap: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heroImage {
+    min-height: 180px;
+  }
+
+  .steps {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stepWrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+}
