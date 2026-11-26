@@ -1,0 +1,691 @@
+* {
+    box-sizing: border-box;
+}
+
+.accounts-page {
+    width: 100%;
+    background: #f3fcf9;
+    color: #171717;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+
+.accounts-navbar {
+    height: 64px;
+    width: 100%;
+    background: #191f70;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+}
+
+.accounts-logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.accounts-nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+.accounts-nav-links a,
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.accounts-nav-links a:hover {
+    color: #83d9c3;
+}
+
+.accounts-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.accounts-nav-actions button {
+    border: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-btn {
+    background: #e5f7f2;
+    color: #191f70;
+}
+
+.signup-btn {
+    background: white;
+    color: #191f70;
+}
+
+
+/* Main Layout */
+
+.accounts-layout {
+    display: flex;
+    align-items: stretch;
+}
+
+.accounts-sidebar {
+    width: 220px;
+    min-width: 220px;
+    background: #f0fbf7;
+    padding-top: 28px;
+}
+
+.sidebar-heading {
+    display: block;
+    background: #07577a;
+    color: white;
+    padding: 15px 10px;
+    margin-bottom: 22px;
+    text-align: center;
+    font-size: 23px;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sidebar-service {
+    margin-bottom: 25px;
+}
+
+.sidebar-service a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 5px 12px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.sidebar-service a:hover,
+.sidebar-service .active-sidebar {
+    color: #07813d;
+}
+
+
+/* Main Content */
+
+.accounts-main {
+    flex: 1;
+    min-width: 0;
+    background: white;
+}
+
+
+/* Hero Section */
+
+.accounts-hero {
+    position: relative;
+    min-height: 400px;
+    padding: 40px 5%;
+    background: #f2fcf9;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    overflow: hidden;
+}
+
+.hero-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #e9faf5;
+    top: 5px;
+    left: 0;
+}
+
+.accounts-hero-content {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 55%;
+    min-width: 0;
+    max-width: 520px;
+}
+
+.section-label {
+    display: block;
+    color: #07813d;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.accounts-hero-content h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.3;
+    color: #111;
+    margin: 0 0 32px;
+}
+
+.accounts-hero-content p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 480px;
+    margin-bottom: 28px;
+}
+
+.primary-btn {
+    background: #07577a;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #07816e;
+}
+
+/* Hero Video Illustration */
+
+.accounts-hero-image {
+    position: relative;
+    z-index: 1;
+
+    flex: 0 0 43%;
+    min-width: 0;
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accounts-hero-animation {
+    display: block;
+
+    width: 100%;
+    max-width: 430px;
+    height: 340px;
+
+    object-fit: contain;
+    object-position: center;
+
+    transform: scale(1.2);
+}
+
+
+/* Benefits Section */
+
+.account-benefits {
+    padding: 45px 6% 55px;
+    background: white;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.section-intro h2 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #171717;
+    margin: 12px 0;
+}
+
+.section-intro p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 10px;
+}
+
+.benefit-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #f0f8ff;
+    color: #7195df;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+}
+
+.benefit-icon svg {
+    width: 34px;
+    height: 34px;
+    stroke-width: 1.5;
+}
+
+.benefit-item h4 {
+    color: #07813d;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.benefit-item p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* Security Section */
+
+.account-security {
+    min-height: 290px;
+    background: #f1fcf8;
+    padding: 45px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.security-content {
+    max-width: 470px;
+}
+
+.security-content h2 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.security-content p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.security-image {
+    width: 43%;
+    display: flex;
+    justify-content: center;
+}
+
+.security-image img {
+    width: 100%;
+    max-width: 310px;
+    height: 270px;
+    object-fit: contain;
+}
+
+
+/* Account Overview */
+
+.account-overview {
+    padding: 65px 5%;
+    background: white;
+}
+
+.account-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.account-card {
+    min-height: 350px;
+    padding: 25px 20px;
+
+    border: 1px solid #c8d0d0;
+    border-radius: 16px;
+    background: white;
+
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.account-card:hover {
+    transform: translateY(-7px);
+    border-color: #168c78;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
+}
+
+.account-card-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #f0f8ff;
+    color: #7195df;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 17px;
+}
+
+.account-card h3 {
+    color: #202020;
+    font-size: 18px;
+    margin: 5px 0 14px;
+}
+
+.account-count {
+    color: #191f70;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.account-count-label {
+    color: #07813d;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.account-card p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+}
+
+.open-account-link {
+    color: #5154d8;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.open-account-link:hover {
+    color: #07813d;
+}
+
+
+/* Footer */
+
+.accounts-footer {
+    background: #191f70;
+    color: white;
+    min-height: 230px;
+    padding: 40px 4% 20px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 30px;
+
+    position: relative;
+}
+
+.footer-brand h2 {
+    font-size: 25px;
+    margin: 0 0 8px;
+}
+
+.footer-brand p {
+    color: #aeb8e4;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer-links a {
+    font-size: 13px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+}
+
+.footer-social svg {
+    width: 20px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    grid-column: 1 / -1;
+    text-align: center;
+    align-self: end;
+    color: #d1d5ed;
+    font-size: 12px;
+    padding-top: 25px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+
+/* Responsive: Tablet */
+
+@media (max-width: 1000px) {
+
+    .accounts-sidebar {
+        width: 180px;
+        min-width: 180px;
+    }
+
+    .accounts-nav-links {
+        gap: 20px;
+    }
+
+    .accounts-hero-content h1 {
+        font-size: 25px;
+    }
+
+    .accounts-hero {
+        gap: 15px;
+        padding: 35px 4%;
+    }
+
+    .accounts-hero-image {
+        width: 350px;
+        height: 350px;
+        border-radius: 10%;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+    .accounts-hero-image video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+    }
+
+    .account-cards {
+        gap: 15px;
+    }
+}
+
+
+/* Responsive: Mobile */
+
+@media (max-width: 768px) {
+
+    .accounts-navbar {
+        padding: 0 15px;
+    }
+
+    .accounts-nav-links {
+        display: none;
+    }
+
+    .accounts-nav-actions {
+        gap: 10px;
+    }
+
+    .accounts-layout {
+        flex-direction: column;
+    }
+
+    .accounts-sidebar {
+        width: 100%;
+        min-width: 0;
+        padding: 12px;
+        display: none;
+    }
+
+    .accounts-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 15px;
+    }
+
+    .accounts-hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .accounts-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .accounts-hero-image {
+        width: 100%;
+        flex: none;
+        height: 280px;
+    }
+
+    .accounts-hero-animation {
+        width: 100%;
+        max-width: 350px;
+        height: 280px;
+        transform: scale(1);
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .account-security {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .security-image {
+        width: 100%;
+    }
+
+    .account-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .accounts-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
+}
+
+
+/* Responsive: Small Mobile */
+
+@media (max-width: 480px) {
+
+    .accounts-nav-actions .signup-btn {
+        display: none;
+    }
+
+    .accounts-hero-content h1 {
+        font-size: 24px;
+    }
+
+    .section-intro h2 {
+        font-size: 22px;
+    }
+
+    .accounts-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
+}
+
+.accounts-hero-image {
+    width: 350px !important;
+    height: 350px !important;
+    border-radius: 50% !important;
+    overflow: hidden !important;
+    clip-path: circle(50%);
+}
+
+.accounts-hero-animation {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}
+
+.accounts-hero-image {
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.accounts-hero-image video.accounts-hero-animation {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}

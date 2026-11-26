@@ -309,25 +309,25 @@ function About() {
         <div className="team-grid">
 
           <div className="team-card">
-            <img src="/images/team1.jpg" alt="Team Member" />
+            <img src="/images/employee1.png" alt="Team Member" />
             <h3>Mr John</h3>
             <p>CEO and Founder</p>
           </div>
 
           <div className="team-card">
-            <img src="/images/team2.jpg" alt="Team Member" />
+            <img src="/images/employee2.png" alt="Team Member" />
             <h3>Mr David</h3>
             <p>CEO and Founder</p>
           </div>
 
           <div className="team-card">
-            <img src="/images/team3.jpg" alt="Team Member" />
+            <img src="/images/employee3.png" alt="Team Member" />
             <h3>Ms Sarah</h3>
             <p>CEO and Founder</p>
           </div>
 
           <div className="team-card">
-            <img src="/images/team4.jpg" alt="Team Member" />
+            <img src="/images/employee4.png" alt="Team Member" />
             <h3>Ms Ayesha</h3>
             <p>CEO and Founder</p>
           </div>
@@ -344,29 +344,47 @@ function About() {
           <h2>Unlock your career at Amanah</h2>
         </div>
 
-        <div className="jobs-grid">
+       
+<div className="jobs-grid">
 
-          <div className="job-card">
-            <h3>Office Manager</h3>
-            <button>Apply Now</button>
-          </div>
+  <div className="job-card">
+    <div className="job-info">
+      <span className="job-category">Administration</span>
+      <h3>Office Manager</h3>
+      <p>Full-time <span>•</span> Dhaka, Bangladesh</p>
+    </div>
+    <button>Apply Now →</button>
+  </div>
 
-          <div className="job-card">
-            <h3>Senior Backend Developer</h3>
-            <button>Apply Now</button>
-          </div>
+  <div className="job-card">
+    <div className="job-info">
+      <span className="job-category">Technology</span>
+      <h3>Senior Backend Developer</h3>
+      <p>Full-time <span>•</span> Dhaka, Bangladesh</p>
+    </div>
+    <button>Apply Now →</button>
+  </div>
 
-          <div className="job-card">
-            <h3>Management Trainee Officer</h3>
-            <button>Apply Now</button>
-          </div>
+  <div className="job-card">
+    <div className="job-info">
+      <span className="job-category">Management</span>
+      <h3>Management Trainee Officer</h3>
+      <p>Full-time <span>•</span> Dhaka, Bangladesh</p>
+    </div>
+    <button>Apply Now →</button>
+  </div>
 
-          <div className="job-card">
-            <h3>HR/Human Resource</h3>
-            <button>Apply Now</button>
-          </div>
+  <div className="job-card">
+    <div className="job-info">
+      <span className="job-category">Human Resources</span>
+      <h3>HR / Human Resource</h3>
+      <p>Full-time <span>•</span> Dhaka, Bangladesh</p>
+    </div>
+    <button>Apply Now →</button>
+  </div>
 
-        </div>
+</div>
+
       </section>
 
 

@@ -614,8 +614,10 @@
   }
 
   .branch-map {
-    height: 350px;
-    overflow: hidden;
+    min-height: 350px;
+    height:450;
+    overflow: visible;
+    padding-bottom: 10px;
   }
 
   .branch-info {
@@ -623,7 +625,7 @@
     font-size: 9px;
     padding: 7px;
   }
-
+  
   .team-tabs {
     flex-wrap: wrap;
   }
@@ -641,9 +643,32 @@
     grid-template-columns: 1fr;
   }
 
-  .about-footer {
-    grid-template-columns: 1fr 1fr;
-  }
+ 
+.job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-category {
+  color: #168c78;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.job-info p {
+  color: #777;
+  font-size: 14px;
+  margin: 0;
+}
+
+.job-info p span {
+  color: #168c78;
+  margin: 0 5px;
+}
+
 }
 
 @media (max-width: 480px) {
