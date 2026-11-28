@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 function Accounts() {
+
   const accountData = [
     {
       title: "Checking Account",
@@ -58,7 +59,9 @@ function Accounts() {
             <a href="#">Savings and Deposits</a>
             <a href="#">Financing (Loan)</a>
             <a href="#">Cards</a>
-            <a href="#" className="active-sidebar">Account</a>
+            <a href="#" className="active-sidebar">
+              Account
+            </a>
 
           </div>
 
@@ -103,19 +106,15 @@ function Accounts() {
 
             </div>
 
-            {/* Hero MP4 Illustration */}
-            <div className="accounts-hero-image">
+{/* Hero PNG Illustration */}
 
-              <video
-                className="accounts-hero-animation"
-                src="/images/Account-Illustration1.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
-
-            </div>
+<div className="accounts-hero-image">
+    <img
+        src="/images/Account-Illustration1.png"
+        alt="Person working on laptop"
+        className="accounts-hero-animation"
+    />
+</div>
 
           </section>
 
@@ -212,7 +211,7 @@ function Accounts() {
             <div className="security-image">
 
               <img
-                src="/images/account-security.png"
+                src="/images/bank.png"
                 alt="Secure online banking"
               />
 
@@ -264,7 +263,7 @@ function Accounts() {
                   <p>{account.description}</p>
 
                   <a href="#" className="open-account-link">
-                    Open Account <ArrowRight size={15} />
+                    View Account <ArrowRight size={15} />
                   </a>
 
                 </div>

@@ -1,3 +1,8 @@
+
+/* =====================================
+   GLOBAL
+===================================== */
+
 * {
     box-sizing: border-box;
 }
@@ -9,7 +14,10 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navbar */
+
+/* =====================================
+   NAVBAR
+===================================== */
 
 .accounts-navbar {
     height: 64px;
@@ -69,7 +77,9 @@
 }
 
 
-/* Main Layout */
+/* =====================================
+   MAIN LAYOUT
+===================================== */
 
 .accounts-layout {
     display: flex;
@@ -115,7 +125,9 @@
 }
 
 
-/* Main Content */
+/* =====================================
+   MAIN CONTENT
+===================================== */
 
 .accounts-main {
     flex: 1;
@@ -124,7 +136,9 @@
 }
 
 
-/* Hero Section */
+/* =====================================
+   HERO SECTION
+===================================== */
 
 .accounts-hero {
     position: relative;
@@ -140,6 +154,9 @@
     overflow: hidden;
 }
 
+
+/* Background Circle */
+
 .hero-circle {
     position: absolute;
     width: 300px;
@@ -149,6 +166,9 @@
     top: 5px;
     left: 0;
 }
+
+
+/* Hero Text */
 
 .accounts-hero-content {
     position: relative;
@@ -182,6 +202,9 @@
     margin-bottom: 28px;
 }
 
+
+/* Get Started Button */
+
 .primary-btn {
     background: #07577a;
     color: white;
@@ -190,9 +213,11 @@
     padding: 12px 24px;
     font-size: 16px;
     font-weight: 600;
+
     display: inline-flex;
     align-items: center;
     gap: 10px;
+
     cursor: pointer;
 }
 
@@ -200,36 +225,43 @@
     background: #07816e;
 }
 
-/* Hero Video Illustration */
+
+/* =====================================
+   HERO PNG ILLUSTRATION
+===================================== */
 
 .accounts-hero-image {
     position: relative;
     z-index: 1;
 
-    flex: 0 0 43%;
-    min-width: 0;
+    flex: 0 0 350px;
+    width: 350px;
     height: 350px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: visible;
 }
 
 .accounts-hero-animation {
     display: block;
 
     width: 100%;
-    max-width: 430px;
-    height: 340px;
+    height: 100%;
 
     object-fit: contain;
     object-position: center;
 
-    transform: scale(1.2);
+    border-radius: 0;
+    background: transparent;
 }
 
 
-/* Benefits Section */
+/* =====================================
+   BENEFITS SECTION
+===================================== */
 
 .account-benefits {
     padding: 45px 6% 55px;
@@ -255,6 +287,9 @@
     line-height: 1.6;
 }
 
+
+/* Benefits Grid */
+
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -266,6 +301,9 @@
     text-align: center;
     padding: 10px;
 }
+
+
+/* Benefit Icons */
 
 .benefit-icon {
     width: 75px;
@@ -300,7 +338,9 @@
 }
 
 
-/* Security Section */
+/* =====================================
+   SECURITY SECTION
+===================================== */
 
 .account-security {
     min-height: 290px;
@@ -330,7 +370,9 @@
 }
 
 .security-image {
-    width: 43%;
+    
+    height: 90px;
+    width: 700px;
     display: flex;
     justify-content: center;
 }
@@ -343,12 +385,13 @@
 }
 
 
-/* Account Overview */
-
 .account-overview {
     padding: 65px 5%;
     background: white;
 }
+
+
+/* Account Cards Grid */
 
 .account-cards {
     display: grid;
@@ -356,6 +399,9 @@
     gap: 28px;
     margin-top: 45px;
 }
+
+
+/* Individual Card */
 
 .account-card {
     min-height: 350px;
@@ -381,6 +427,9 @@
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
 }
 
+
+/* Card Icon */
+
 .account-card-icon {
     width: 76px;
     height: 76px;
@@ -400,6 +449,9 @@
     font-size: 18px;
     margin: 5px 0 14px;
 }
+
+
+/* Account Count */
 
 .account-count {
     color: #191f70;
@@ -422,6 +474,9 @@
     margin: 0 0 20px;
 }
 
+
+/* Open Account Link */
+
 .open-account-link {
     color: #5154d8;
     text-decoration: none;
@@ -437,8 +492,6 @@
     color: #07813d;
 }
 
-
-/* Footer */
 
 .accounts-footer {
     background: #191f70;
@@ -501,7 +554,9 @@
 }
 
 
-/* Responsive: Tablet */
+/* =====================================
+   TABLET RESPONSIVE
+===================================== */
 
 @media (max-width: 1000px) {
 
@@ -514,32 +569,25 @@
         gap: 20px;
     }
 
-    .accounts-hero-content h1 {
-        font-size: 25px;
-    }
-
     .accounts-hero {
         gap: 15px;
         padding: 35px 4%;
     }
 
-    .accounts-hero-image {
-        width: 350px;
-        height: 350px;
-        border-radius: 10%;
-        overflow: hidden;
-        position: relative;
-        flex-shrink: 0;
+    .accounts-hero-content h1 {
+        font-size: 25px;
     }
 
-    .accounts-hero-image video {
+    .accounts-hero-image {
+        flex: 0 0 280px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .accounts-hero-animation {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-radius: 50%;
+        object-fit: contain;
     }
 
     .account-cards {
@@ -548,7 +596,9 @@
 }
 
 
-/* Responsive: Mobile */
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
 
 @media (max-width: 768px) {
 
@@ -579,12 +629,16 @@
         flex-direction: column;
         text-align: center;
         padding: 40px 20px;
-        gap: 15px;
+        gap: 25px;
     }
 
     .accounts-hero-content {
         width: 100%;
         max-width: 100%;
+    }
+
+    .accounts-hero-content h1 {
+        font-size: 26px;
     }
 
     .accounts-hero-content p {
@@ -593,16 +647,16 @@
     }
 
     .accounts-hero-image {
-        width: 100%;
-        flex: none;
+        width: 280px;
+        max-width: 100%;
         height: 280px;
+        flex: none;
     }
 
     .accounts-hero-animation {
         width: 100%;
-        max-width: 350px;
-        height: 280px;
-        transform: scale(1);
+        height: 100%;
+        object-fit: contain;
     }
 
     .benefits-grid {
@@ -633,7 +687,9 @@
 }
 
 
-/* Responsive: Small Mobile */
+/* =====================================
+   SMALL MOBILE
+===================================== */
 
 @media (max-width: 480px) {
 
@@ -643,6 +699,11 @@
 
     .accounts-hero-content h1 {
         font-size: 24px;
+    }
+
+    .accounts-hero-image {
+        width: 250px;
+        height: 250px;
     }
 
     .section-intro h2 {
@@ -656,36 +717,4 @@
     .footer-bottom {
         text-align: left;
     }
-}
-
-.accounts-hero-image {
-    width: 350px !important;
-    height: 350px !important;
-    border-radius: 50% !important;
-    overflow: hidden !important;
-    clip-path: circle(50%);
-}
-
-.accounts-hero-animation {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    border-radius: 50% !important;
-}
-
-.accounts-hero-image {
-    width: 250px;
-    height: 350px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    flex-shrink: 0;
-}
-
-.accounts-hero-image video.accounts-hero-animation {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
 }
